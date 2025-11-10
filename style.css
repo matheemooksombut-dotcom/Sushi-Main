@@ -164,3 +164,20 @@ color: aliceblue;
   object-fit: cover;
   background-position: center;
 }
+
+
+@media screen and (max-width: 1000px) {
+
+  .hamberger-bar {
+  display: block;
+  cursor: pointer;
+  padding-right: 40px;
+  }
+  .logo{
+  display: none;
+  }
+  .ls-menu{
+    padding-left: 40px;
+  }
+   
+}
