@@ -113,6 +113,8 @@ color: aliceblue;
 
 .menuItem{
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
    width: 100%;
    padding-top: 100px;
    padding-left: 220px;
@@ -130,8 +132,8 @@ color: aliceblue;
 }
 
 .I-1 img{
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 200px;
   object-fit: cover;
   background-position: center;
@@ -145,8 +147,8 @@ color: aliceblue;
   
 }
 .I-2 img{
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 200px;
   object-fit: cover;
   background-position: center;
@@ -158,12 +160,22 @@ color: aliceblue;
   border-radius: 200px;
 }
 .I-3 img{
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border-radius: 200px;
   object-fit: cover;
   background-position: center;
 }
+
+
+@media screen and (max-width: 1661px) {
+   .Popular-Menu{
+    height: auto;
+  }
+}
+@media screen and (max-width: 1282px) {
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -173,11 +185,127 @@ color: aliceblue;
   cursor: pointer;
   padding-right: 40px;
   }
+  .menu{
+    display: none;
+  }
   .logo{
   display: none;
   }
   .ls-menu{
     padding-left: 40px;
   }
-   
+  .menu.show{
+    margin-top: 70px;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+
+ .menu-wraper {
+    
+    height: auto; 
+    padding: 40px 0px;
+    background-color: rgb(9, 0, 61); 
+  }
+
+  .Popular-Menu{
+    height: auto;
+  }
+   .menuItem{
+    padding-right: 200px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+  
+.I-1{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  
+  
+}
+.I-2{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  
+  
+}
+.I-3{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  
+  
+}
+  .Popular-Menu{
+    height: auto;
+}
+}
+
+
+
+
+@media screen and (max-width: 930px) {
+  
+.I-1{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: 50px;
+  
+}
+.I-2{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: 50px;
+  
+  
+}
+.I-3{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: 50px;
+  
+}
+.Popular-Menu{
+    height: auto;
+  
+}
+}
+
+
+@media screen and (max-width: 790px) {
+  .menuItem{
+    padding-right: -400px;
+   }
+  
+.I-1{
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+  margin-top: 50px;
+  
+}
+.I-2{
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+
+  
+  
+}
+.I-3{
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+ 
+  
+}
+  .Popular-Menu{
+    height: auto;
+  }
 }
