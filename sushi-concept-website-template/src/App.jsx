@@ -1,11 +1,13 @@
 import { useState , useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 // import './App.css'
 import './style.css'
+import { Link } from "react-router-dom";
 import axios from 'axios'
 
+
 function App() {
+  
   const [message, setMessage] = useState("")
 
   useEffect(()=>{
@@ -13,6 +15,7 @@ function App() {
       setMessage(res.data)
     })
   },[])
+  
 
  return (
     <div>
@@ -27,7 +30,7 @@ function App() {
         <div className="ls-menu">
           <ul className="menu">
             <li className="menu-1"><a href="/">Home</a></li>
-            <li className="menu-2"><a href="/order">Product</a></li>
+            <li className="menu-2"><Link to="/order">Product</Link></li>
             <li className="menu-3"><a href="">About</a></li>
             <li className="menu-4"><a href="">Contract</a></li>
           </ul>
@@ -220,6 +223,11 @@ function App() {
       </section>
     </div>
   );
+  
 }
 
-export default App
+
+
+
+
+export default App;

@@ -1,0 +1,127 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./style.css"; // ถ้าไฟล์ css อยู่ที่เดียวกัน
+
+export default function Order() {
+    return (
+        <div>
+
+            {/* Navbar */}
+            <nav className="menu-wraper">
+                <div className="logo">
+                    <img src="/logo.png" alt="Logo" />
+                </div>
+
+                <div className="ls-menu">
+                    <ul className="menu">
+                        <li className="menu-1">
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li className="menu-2">
+                            <Link to="/order">Product</Link>
+                        </li>
+                        <li className="menu-3">
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li className="menu-4">
+                            <Link to="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="hamberger-bar">
+                    <i style={{ color: "aliceblue" }} className="fa-solid fa-bars fa-bounce"></i>
+                </div>
+            </nav>
+
+            {/* Content */}
+            <div className="contentwraper">
+                <div className="orederall">
+
+                    {/* 1 */}
+                    <div>
+                        <div className="order1">
+                            <img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 2 */}
+                    <div>
+                        <div className="order2">
+                            <img src="/sushirow.png" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 3 */}
+                    <div>
+                        <div className="order3">
+                            <img src="/sushisalmon.png" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 4 */}
+                    <div>
+                        <div className="order4">
+                            <img src="/image.png" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 5 */}
+                    <div>
+                        <div className="order5">
+                            <img src="https://blog.hungryhub.com/.../1024x1024.webp" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 6 */}
+                    <div>
+                        <div className="order6">
+                            <img src="https://www.toyotakan.com/...jpg" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 7 */}
+                    <div>
+                        <div className="order7">
+                            <img src="https://i.ytimg.com/vi/_SJfXONxEz8/hq720.jpg" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 8 */}
+                    <div>
+                        <div className="order8">
+                            <img src="https://www.krungsri.com/...jpg" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                    {/* 9 */}
+                    <div>
+                        <div className="order9">
+                            <img src="https://www.travelzeed.com/...webp" alt="" />
+                        </div>
+                        <br /><br />
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    );
+}
