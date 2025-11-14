@@ -980,3 +980,77 @@ a:hover{
 }
 
 /* !Animation ----- */
+
+
+
+
+
+.order1:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
+.order2:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+.order3:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
+.order4:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+.order5:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
+.order6:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+.order7:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
+.order8:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
+.order9:hover{
+ transition: 2s;
+ transform: rotateY(180deg);
+ cursor: pointer;
+  
+}
+
+
