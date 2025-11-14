@@ -674,3 +674,69 @@ color: aliceblue;
   /* ! */
 
 }
+
+.more{
+  width: 100%;
+  height: 50vh;
+  background-color: black;
+}
+
+.morecontent{
+  display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto;
+column-gap: 300px;
+}
+
+.title-more{
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: 60px;
+  
+  
+}
+
+.about-more{
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: 60px;
+  
+}
+
+
+
+.about-display{
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.fix-gap{
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  column-gap: 100px;
+}
+
+.services-more{
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  margin-top: 100px;
+  margin-left: -300px;
+ 
+}
+
+.Services-display{
+  list-style: none;
+  text-decoration: none;
+  
+}
+.felx-contract{
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 70px;
+}
