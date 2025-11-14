@@ -1,7 +1,8 @@
 import { useState , useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import 'App.css'
+// import './App.css'
+import './style.css'
 import axios from 'axios'
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
       <nav className="menu-wraper">
         <div className="logo">
           <img
-            src="sushi-concept-website-template/Place Your Logo Here (Double Click to Edit).png"
-            alt=""
+            src="/logo.png"
+            alt="Logo"
           />
         </div>
 
@@ -71,7 +72,7 @@ function App() {
 
           <div className="menuItem">
             <div className="I-1">
-              <img src="/sushi-concept-website-template/sushisalmon.png" alt="" />
+              <img src="/sushisalmon.png" alt="" />
               <div>
                 <br />
                 <p>
@@ -82,7 +83,7 @@ function App() {
             </div>
 
             <div className="I-2">
-              <img src="/sushi-concept-website-template/sushirow.png" alt="" />
+              <img src="/sushirow.png" alt="" />
               <div>
                 <br />
                 <p>
@@ -93,7 +94,7 @@ function App() {
             </div>
 
             <div className="I-3">
-              <img src="/sushi-concept-website-template/image.png" alt="" />
+              <img src="/image.png" alt="" />
               <div>
                 <br />
                 <p>
@@ -110,7 +111,7 @@ function App() {
       <section className="title2">
         <div className="content-title2">
           <div className="img-title2">
-            <img src="/sushi-concept-website-template/sushisalmon.png" alt="" />
+            <img src="/sushisalmon.png" alt="" />
           </div>
 
           <div className="content2">
@@ -151,7 +152,7 @@ function App() {
           </div>
 
           <div className="img-title3">
-            <img src="/sushi-concept-website-template/sushirow.png" alt="" />
+            <img src="/sushirow.png" alt="" />
           </div>
         </div>
       </section>
