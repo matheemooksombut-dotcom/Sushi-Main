@@ -24,7 +24,7 @@ export default function Order() {
                             <Link to="/about">About</Link>
                         </li>
                         <li className="menu-4">
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact">Contract</Link>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +77,7 @@ export default function Order() {
                     {/* 5 */}
                     <div>
                         <div className="order5">
-                            <img src="https://blog.hungryhub.com/.../1024x1024.webp" alt="" />
+                            <img src="/ssushi.jpg" alt="" />
                         </div>
                         <br /><br />
                         <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
@@ -86,7 +86,7 @@ export default function Order() {
                     {/* 6 */}
                     <div>
                         <div className="order6">
-                            <img src="https://www.toyotakan.com/...jpg" alt="" />
+                            <img src="/rice.jpg" alt="" />
                         </div>
                         <br /><br />
                         <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
@@ -104,7 +104,7 @@ export default function Order() {
                     {/* 8 */}
                     <div>
                         <div className="order8">
-                            <img src="https://www.krungsri.com/...jpg" alt="" />
+                            <img src="/reme.jpg" alt="" />
                         </div>
                         <br /><br />
                         <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
@@ -113,7 +113,7 @@ export default function Order() {
                     {/* 9 */}
                     <div>
                         <div className="order9">
-                            <img src="https://www.travelzeed.com/...webp" alt="" />
+                            <img src="/jp-food-1.jpg" alt="" />
                         </div>
                         <br /><br />
                         <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
