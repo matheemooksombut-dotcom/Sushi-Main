@@ -8,13 +8,13 @@ import axios from 'axios'
 
 function App() {
   
-  const [message, setMessage] = useState("")
+  // const [message, setMessage] = useState("")
 
-  useEffect(()=>{
-    axios.get('/api/test').then(res=>{
-      setMessage(res.data)
-    })
-  },[])
+  // useEffect(()=>{
+  //   axios.get('/api/test').then(res=>{
+  //     setMessage(res.data)
+  //   })
+  // },[])
   
 
  return (
