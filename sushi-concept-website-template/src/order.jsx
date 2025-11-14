@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css"; // ถ้าไฟล์ css อยู่ที่เดียวกัน
+import './style/style.css'; 
 
 export default function Order() {
     return (

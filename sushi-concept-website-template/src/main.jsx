@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App.jsx'
 import Order from "./order.jsx";
-import './style.css'
+import './style/style.css'; 
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

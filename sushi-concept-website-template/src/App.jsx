@@ -1,7 +1,7 @@
 import { useState , useEffect } from 'react'
 
 // import './App.css'
-import './style.css'
+import './style/style.css'; 
 import { Link } from "react-router-dom";
 import axios from 'axios'
 
