@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './style/style.css'; 
 
-export default function Item1(){
+export default function Item2(){
 
 return(
     <nav className="menu-wraper">

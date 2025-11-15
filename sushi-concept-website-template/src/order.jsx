@@ -37,14 +37,14 @@ export default function Order() {
             {/* Content */}
             <div className="contentwraper">
                 <div className="orederall">
-
+  
                     {/* 1 */}
                     <div>
                         <div className="order1">
                             <img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/"></Link>สั่งสินค้า </div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item1">สั่งสินค้า</Link> </div>
                     </div>
 
                     {/* 2 */}
@@ -53,7 +53,7 @@ export default function Order() {
                             <img src="/sushirow.png" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item2">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 3 */}
@@ -62,7 +62,7 @@ export default function Order() {
                             <img src="/sushisalmon.png" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item3">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 4 */}
@@ -71,7 +71,7 @@ export default function Order() {
                             <img src="/image.png" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item4">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 5 */}
@@ -80,7 +80,7 @@ export default function Order() {
                             <img src="/ssushi.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item5">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 6 */}
@@ -89,7 +89,7 @@ export default function Order() {
                             <img src="/rice.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item6">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 7 */}
@@ -98,7 +98,7 @@ export default function Order() {
                             <img src="https://i.ytimg.com/vi/_SJfXONxEz8/hq720.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item7">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 8 */}
@@ -107,7 +107,7 @@ export default function Order() {
                             <img src="/reme.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item8">สั่งสินค้า</Link></div>
                     </div>
 
                     {/* 9 */}
@@ -116,7 +116,7 @@ export default function Order() {
                             <img src="/jp-food-1.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item9">สั่งสินค้า</Link></div>
                     </div>
 
                 </div>
