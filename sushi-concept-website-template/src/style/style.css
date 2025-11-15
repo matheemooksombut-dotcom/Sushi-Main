@@ -1059,3 +1059,22 @@ a:hover{
    height: 100vh;
    background-color: black;
 }
+
+
+.btnorder{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+
+.btnorder:hover{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  color: #ff0000;
+  border-radius: 40px;
+}
