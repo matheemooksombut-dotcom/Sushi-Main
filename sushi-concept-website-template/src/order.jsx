@@ -44,7 +44,9 @@ export default function Order() {
                             <Link to="/item1"><img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item1">สั่งสินค้า</Link> </div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item1")}><p>สั่งสินค้า</p></button></div> 
+              
+                      
                     </div>
 
                     {/* 2 */}
@@ -53,7 +55,7 @@ export default function Order() {
                             <Link to="/item2"><img src="/sushirow.png" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item2">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item2")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 3 */}
@@ -62,7 +64,7 @@ export default function Order() {
                            <Link to="/item3"><img src="/sushisalmon.png" alt="" /></Link> 
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item3">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item3")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 4 */}
@@ -71,7 +73,7 @@ export default function Order() {
                             <Link to="/item4"><img src="/image.png" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item4">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item4")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 5 */}
@@ -80,7 +82,7 @@ export default function Order() {
                             <Link to="/item5"><img src="/ssushi.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item5">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item5")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 6 */}
@@ -89,7 +91,7 @@ export default function Order() {
                            <Link to="/item6"><img src="/rice.jpg" alt="" /></Link> 
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item6">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item6")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 7 */}
@@ -98,7 +100,7 @@ export default function Order() {
                            <Link to="/item7"><img src="https://i.ytimg.com/vi/_SJfXONxEz8/hq720.jpg" alt="" /></Link> 
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item7">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item7")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 8 */}
@@ -107,7 +109,7 @@ export default function Order() {
                             <Link to="/item8"><img src="/reme.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item8">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/itemค")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 9 */}
@@ -116,7 +118,7 @@ export default function Order() {
                             <Link to="/item9"><img src="/jp-food-1.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/item9">สั่งสินค้า</Link></div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/itemต")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                 </div>
