@@ -29,7 +29,7 @@ return(
         </nav>
 
 
-        <div>
+        <div className="itempage">
             
         </div>
     </>
