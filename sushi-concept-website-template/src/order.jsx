@@ -44,7 +44,7 @@ export default function Order() {
                             <img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" />
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.</div>
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur. <Link to="/"></Link>สั่งสินค้า </div>
                     </div>
 
                     {/* 2 */}
