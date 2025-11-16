@@ -1057,7 +1057,7 @@ a:hover{
 .itempage{
    width: 100%;
    height: 100vh;
-   background-color: black;
+   background-color: rgb(255, 255, 255);
 }
 
 
@@ -1078,3 +1078,39 @@ a:hover{
   color: #ff0000;
   border-radius: 40px;
 }
+
+.menu-wraper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px; 
+  z-index: 1;
+}
+
+.itempage {
+  margin-top: 220px; 
+  width: 1200px;
+  height: 1000px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 500px
+}
+
+.pic-content{
+  width: 600px;
+  height: 500px;
+  margin-left: 300px;
+}
+
+.pic-content img{
+  object-fit: cover;
+  width: 600px;
+  height: 500px;
+  border-radius: 100px;
+}
+
+
+.item-content{
+  
+}
+
+

@@ -28,10 +28,23 @@ return(
             </div>
         </nav>
 
-
         <div className="itempage">
-            
+            <div className="pic-content">
+                <img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" />
+
+            </div>
+
+
+             <div className="item-content">
+
+                
+            </div>
+         
+                
+
+           
         </div>
+
     </>
 
 
