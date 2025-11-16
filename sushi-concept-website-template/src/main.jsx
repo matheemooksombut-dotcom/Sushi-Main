@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App.jsx'
 import Order from "./order.jsx";
-import Item1 from './item1.jsx';
+import Item1 from './Item1.jsx';
 import Item2 from './item2.jsx';
 import Item3 from './item3.jsx';
 import Item4 from './item4.jsx';
@@ -19,7 +19,7 @@ createRoot(document.getElementById("root")).render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/order" element={<Order />} />
-      <Route path="/item1" element={<Item1 />} />
+      <Route path="/Item1" element={<Item1 />} />
       <Route path="/item2" element={<Item2 />} />
       <Route path="/item3" element={<Item3 />} />
       <Route path="/item4" element={<Item4 />} />
