@@ -1148,5 +1148,44 @@ a:hover{
   padding-top: 100px;
   padding-left: 400px;
 }
+.btn-qty {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
 
+/* ปุ่ม + */
+.btn-qty.plus {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* ปุ่ม - */
+.btn-qty.minus {
+  background: linear-gradient(135deg, #ff4b1f, #ff9068);
+}
+
+/* เอฟเฟกต์ hover */
+.btn-qty:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* เอฟเฟกต์ตอนกด */
+.btn-qty:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-flex{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
 
