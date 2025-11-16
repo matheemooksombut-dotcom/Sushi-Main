@@ -36,7 +36,13 @@ return(
 
 
              <div className="item-content">
-
+                <div className="data">
+                    <form className="dataitem" action="">
+                      <span style={{color : "aliceblue"}} >รายการ : </span> <input  className="style-input" type="number" defaultValue={1} min={1} readOnly />
+                      <br />
+                      <span style={{color : "aliceblue"}} >ราคา : </span> <input  className="style-input2" type="number" defaultValue={120} min={120} readOnly />
+                    </form>
+                </div>
                 
             </div>
          

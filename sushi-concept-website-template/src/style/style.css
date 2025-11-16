@@ -1110,14 +1110,43 @@ a:hover{
 
 
 .item-content{
-  width: 600px;
+  width: 1000px;
   height: 400px;
-  background-color: black;
+ background-color: rgb(9, 0, 61);
   margin-top: 30px;
-  margin-left: 300px
-  
+  margin-left: 100px;
+  border-radius: 100px;
+
 
   
+}
+
+.dataitem{
+
+}
+
+.style-input{
+  border-style: none;
+  background-color: rgb(9, 0, 61);
+  color: #ffffff;
+  font: 2rem sans-serif;
+  width: 30px;
+  margin-left: 60px;
+}
+.style-input2{
+  border-style: none;
+  background-color: rgb(9, 0, 61);
+  color: #ffffff;
+  font: 2rem sans-serif;
+  width: 70px;
+  margin-left: 75px;
+}
+
+
+.data{
+
+  padding-top: 100px;
+  padding-left: 400px;
 }
 
 
