@@ -1110,6 +1110,11 @@ a:hover{
 
 
 .item-content{
+  width: 600px;
+  height: 400px;
+  background-color: black;
+  margin-top: 30px;
+  margin-left: 300px
   
 }
 
