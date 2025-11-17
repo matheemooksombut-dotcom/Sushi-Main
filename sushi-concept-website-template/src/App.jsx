@@ -177,14 +177,14 @@ function App() {
               <br />
 
               <div className="felx-contract">
-                <a href="https://www.instagram.com/">
-                  <i className="fa-brands fa-instagram fa-beat-fade fa-lg"></i>
+                <a href="https://www.instagram.com/"> 
+                  {/* <i className="fa-brands fa-instagram fa-beat-fade fa-lg"></i>  */}
                 </a>
                 <a href="https://www.facebook.com/?locale=th_TH">
-                  <i className="fa-brands fa-facebook fa-beat-fade fa-lg"></i>
+                  {/* <i className="fa-brands fa-facebook fa-beat-fade fa-lg"></i> */}
                 </a>
                 <a href="https://x.com/?lang=th">
-                  <i className="fa-brands fa-square-x-twitter fa-beat-fade fa-lg"></i>
+                  {/* <i className="fa-brands fa-square-x-twitter fa-beat-fade fa-lg"></i> */}
                 </a>
               </div>
             </div>
