@@ -1092,7 +1092,7 @@ a:hover{
   top: 0;
   width: 100%;
   height: 120px; 
-  z-index: 1;
+  z-index: 2;
 }
 
 .itempage {
@@ -1278,4 +1278,5 @@ a:hover{
 .about-content{
   background-color: black;
   width: 100%;
+  height: 50vh;
 }
