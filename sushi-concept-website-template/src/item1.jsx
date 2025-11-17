@@ -9,7 +9,7 @@ export default function Item1() {
     <div className="bodyp">
       <nav className="menu-wraper">
         <div className="logo">
-          <img src="/logo.png" alt="Logo" />
+         <Link to="/"><img src="/logo.png" alt="Logo" /></Link> 
         </div>
 
         <div className="ls-menu">
@@ -33,7 +33,7 @@ export default function Item1() {
 
         <div className="item-content">
           <br />
-         <center><h2 style={{color:"aliceblue"}}>SET1 SuhiSachimi</h2></center> 
+         <center><h2 style={{color:"aliceblue"}}>SET1 </h2></center> 
           <div className="data">
             <form id="fromid" className="dataitem" action="">
               <span style={{color:"aliceblue"}}>รายการ: </span>

@@ -33,7 +33,7 @@ export default function Item8() {
 
         <div className="item-content">
           <br />
-         <center><h2 style={{color:"aliceblue"}} >SET1 SuhiSachimi</h2></center> 
+         <center><h2 style={{color:"aliceblue"}} >SET8</h2></center> 
           <div className="data">
             <form id="fromid" className="dataitem" action="">
               <span style={{color:"aliceblue"}}>รายการ: </span>
