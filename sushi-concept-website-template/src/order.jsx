@@ -109,7 +109,7 @@ export default function Order() {
                             <Link to="/item8"><img src="/reme.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/itemค")}><p>สั่งสินค้า</p></button></div> 
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item8")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                     {/* 9 */}
@@ -118,7 +118,7 @@ export default function Order() {
                             <Link to="/item9"><img src="/jp-food-1.jpg" alt="" /></Link>
                         </div>
                         <br /><br />
-                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/itemต")}><p>สั่งสินค้า</p></button></div> 
+                        <div style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur.     <button className="btnorder" onClick={() => (window.location.href = "/item")}><p>สั่งสินค้า</p></button></div> 
                     </div>
 
                 </div>

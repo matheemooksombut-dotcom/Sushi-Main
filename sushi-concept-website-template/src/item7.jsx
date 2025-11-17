@@ -28,12 +28,12 @@ export default function Item7() {
 
       <div className="itempage">
         <div className="pic-content">
-          <img src="https://www.educatepark.com/wp-content/uploads/2015/01/Image.jpg" alt="" />
+          <img src="https://i.ytimg.com/vi/_SJfXONxEz8/hq720.jpg" alt="" />
         </div>
 
         <div className="item-content">
           <br />
-         <center><h2 >SET1 SuhiSachimi</h2></center> 
+         <center><h2 style={{color:"aliceblue"}} >SET1 SuhiSachimi</h2></center> 
           <div className="data">
             <form id="fromid" className="dataitem" action="">
               <span style={{color:"aliceblue"}}>รายการ: </span>

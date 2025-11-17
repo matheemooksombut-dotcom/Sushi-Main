@@ -33,7 +33,7 @@ export default function Item1() {
 
         <div className="item-content">
           <br />
-         <center><h2 >SET1 SuhiSachimi</h2></center> 
+         <center><h2 style={{color:"aliceblue"}}>SET1 SuhiSachimi</h2></center> 
           <div className="data">
             <form id="fromid" className="dataitem" action="">
               <span style={{color:"aliceblue"}}>รายการ: </span>
@@ -47,8 +47,10 @@ export default function Item1() {
               <br /><br />
 
               <div className="btn-flex">
-                <button className="btn-qty minus" type="button" onClick={() => setQty(Math.max(1, qty - 1))}>−</button>
-                <button className="btn-qty plus" type="button" onClick={() => setQty(qty + 1)}>+</button>
+                
+                  <button className="btn-qty minus" type="button" onClick={() => setQty(Math.max(1, qty - 1))}>−</button>
+                  <button className="btn-qty plus" type="button" onClick={() => setQty(qty + 1)}>+</button>
+                
               </div>
             </form>
           </div>
