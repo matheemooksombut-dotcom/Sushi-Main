@@ -27,6 +27,15 @@ export default function About() {
       </nav>
 
       <div className="itempage2">
+
+        <div className="titleabout">
+            <h1>ABOUT</h1>
+
+        </div>
+
+        <div className="bookingabout">
+            
+        </div>
            
             
             
