@@ -1275,3 +1275,7 @@ a:hover{
   flex-direction: row;
   
 }
+.about-content{
+  background-color: black;
+  width: 100%;
+}
