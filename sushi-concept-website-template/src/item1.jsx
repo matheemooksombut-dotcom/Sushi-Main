@@ -16,7 +16,7 @@ export default function Item1() {
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><Link to="/order">Product</Link></li>
-            <li><a href="">About</a></li>
+            <li><Link to="/about">About</Link></li>
             <li><a href="">Contract</a></li>
           </ul>
         </div>

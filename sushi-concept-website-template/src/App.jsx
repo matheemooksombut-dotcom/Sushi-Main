@@ -31,7 +31,7 @@ function App() {
           <ul className="menu">
             <li className="menu-1"><a href="/">Home</a></li>
             <li className="menu-2"><Link to="/order">Product</Link></li>
-            <li className="menu-3"><a href="">About</a></li>
+            <li className="menu-3"><Link to="/about">About</Link></li>
             <li className="menu-4"><a href="">Contract</a></li>
           </ul>
         </div>
