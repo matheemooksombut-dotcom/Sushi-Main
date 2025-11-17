@@ -27,7 +27,9 @@ export default function About() {
       </nav>
 
       <div className="itempage2">
-        
+            
+                <img src="https://blog.pparkhotel.com/wp-content/uploads/2025/02/woman-eating-sushi-2023-11-27-05-08-16-utc.jpg" alt="" />
+            
       </div>
     </div>
   );
