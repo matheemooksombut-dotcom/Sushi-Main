@@ -24,7 +24,7 @@ export default function Order() {
                             <Link to="/about">About</Link>
                         </li>
                         <li className="menu-4">
-                            <Link to="/contact">Contract</Link>
+                            <Link to="/contact">Cart</Link>
                         </li>
                     </ul>
                 </div>
