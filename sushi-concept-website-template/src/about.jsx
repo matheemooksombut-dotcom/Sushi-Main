@@ -40,6 +40,8 @@ export default function About() {
             
             
       </div>
+
+      <div className="about-content"></div>
     </div>
   );
 }
