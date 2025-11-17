@@ -1263,3 +1263,15 @@ a:hover{
  
   
 }
+
+.bookingabout{
+  margin-top: 400px;
+  margin-right: 400px;
+  font-size: larger;
+  font-weight: bold;
+}
+.itempage2{
+  display: flex;
+  flex-direction: row;
+  
+}
