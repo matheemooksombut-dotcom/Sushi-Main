@@ -1202,9 +1202,7 @@ a:hover{
   font-size: large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.itempage2{
-  background-color: black;
-}
+
 .about-navper{
   width: 100%;
   height: 500px;
@@ -1213,14 +1211,16 @@ a:hover{
 
 
 
+
+
+
+
+
 .itempage2{
-  margin-top: 120px;
-  width: 100%;
+   background-image: url("https://blog.pparkhotel.com/wp-content/uploads/2025/02/woman-eating-sushi-2023-11-27-05-08-16-utc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
+  background-position: center;
 }
 
-.itempage2 img{
-  width: 100%;
-  height: 80vh;
-  background-size: cover;
-}
