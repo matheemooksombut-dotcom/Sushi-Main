@@ -1069,8 +1069,8 @@ a:hover{
 }
 
 .btnorder{
-  width: 100px;
-  height: 30px;
+  width: 130px;
+  height: 50px;
   background-color: black;
   color: #ffffff;
   border-radius: 40px;
@@ -1079,8 +1079,8 @@ a:hover{
 
 
 .btnorder:hover{
-  width: 100px;
-  height: 30px;
+  width: 130px;
+  height: 50px;
   background-color: rgb(255, 255, 255);
   color: #ff0000;
   border-radius: 40px;
@@ -1198,4 +1198,7 @@ a:hover{
   column-gap: 50px;
   margin-left: 20px;
 }
-
+.wd{
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
