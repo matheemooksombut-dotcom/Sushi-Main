@@ -42,6 +42,24 @@ export default function About() {
       </div>
 
       <div className="about-content">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="content1-a">
+            <div className="pa">
+                <img src="" alt="" />
+            </div>
+            <br />
+            <br />
+            <p> OPEN : 9:00 AM - 18:00PM</p>
+            <br />
+            <p> TELL : 0123456789</p>
+            <br />
+           <Link to="https://www.google.com/maps/@13.6761404,101.0824919,11z?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"><p style={{color: "black"}}> Location :  https://www.google.com/maps</p></Link>
+
+        </div>
+        
 
         
       </div>
