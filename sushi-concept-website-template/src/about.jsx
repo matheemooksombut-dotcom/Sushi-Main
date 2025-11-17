@@ -48,7 +48,7 @@ export default function About() {
         <br />
         <div className="content1-a">
             <div className="pa">
-                <img src="" alt="" />
+                <img src="https://my.so-bangkok.com/wp-content/uploads/2024/06/SOSHI-Dinner-360-x-245-12.png" alt="" />
             </div>
             <br />
             <br />
