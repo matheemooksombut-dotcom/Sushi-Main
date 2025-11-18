@@ -16,7 +16,7 @@ export default function Item7() {
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><Link to="/order">Product</Link></li>
-            <li><a href="">About</a></li>
+            <li className="menu-3"><Link to="/about">About</Link></li>
             <li><a href="">Cart</a></li>
           </ul>
         </div>
