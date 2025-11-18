@@ -188,6 +188,7 @@ function App() {
                   <i className="fa-brands fa-facebook fa-beat-fade fa-lg"></i>
                 </a>
                 <a href="https://x.com/?lang=th">
+                <i class="fa-brands fa-twitch fa-beat-fade fa-lg"></i>
                   
                   
                 </a>
