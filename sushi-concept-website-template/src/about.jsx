@@ -18,6 +18,7 @@ export default function About() {
             <li><Link to="/order">Product</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><a href=""></a>Cart</li>
+             <li><Link to=""><i class="fa-solid fa-user fa-lg"></i></Link></li>
           </ul>
         </div>
 
