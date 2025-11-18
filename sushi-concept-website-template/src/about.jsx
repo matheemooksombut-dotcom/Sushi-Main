@@ -36,6 +36,7 @@ export default function About() {
         <div className="bookingabout">
             <p style={{ color: "aliceblue" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis placeat corrupti nemo doloremque, odit vel! Lorem ipsum dolor sit.</p>
         </div>
+        <p>2</p>
            
             
             
