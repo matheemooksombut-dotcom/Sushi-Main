@@ -4,6 +4,8 @@ import { useState , useEffect } from 'react'
 import './style/style.css'; 
 import { Link } from "react-router-dom";
 import axios from 'axios'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 
 function App() {
@@ -178,13 +180,15 @@ function App() {
 
               <div className="felx-contract">
                 <a href="https://www.instagram.com/"> 
-                  {/* <i className="fa-brands fa-instagram fa-beat-fade fa-lg"></i>  */}
+                  
+                  <i className="fa-brands fa-instagram fa-beat-fade fa-lg"></i> 
                 </a>
                 <a href="https://www.facebook.com/?locale=th_TH">
-                  {/* <i className="fa-brands fa-facebook fa-beat-fade fa-lg"></i> */}
+                  <i className="fa-brands fa-facebook fa-beat-fade fa-lg"></i>
                 </a>
                 <a href="https://x.com/?lang=th">
-                  {/* <i className="fa-brands fa-square-x-twitter fa-beat-fade fa-lg"></i> */}
+                  
+                  
                 </a>
               </div>
             </div>
