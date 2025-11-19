@@ -24,7 +24,7 @@ export default function Register() {
     if(!form.password)newErrors.password =  "กรุณากรอก Password"; 
     if(!form.confirm)newErrors.confirm = "กรูณากรอก Confrime Password" ; 
     
-    if(form.password && form.confirm && form.password !== form.confirm)newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน";
+    if(form.password && form.confirm && form.password !== form.confirm){newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน";
     }
 
     return newErrors;
