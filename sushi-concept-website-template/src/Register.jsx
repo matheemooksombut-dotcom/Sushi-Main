@@ -17,6 +17,33 @@ export default function Register() {
     setFrom({...form,[e.target.name]: e.target.value});
   };
 
+  const validate =  () =>{
+    let newErrors = {}; 
+    if(!form.username)newErrors.username = "กรุณากรอก Username "; 
+    if(!form.firstname)newErrors.firstname = "กรุณากรอก Firstname"; 
+    if(!form.password)newErrors.password =  "กรุณากรอก Password"; 
+    if(!form.confirm)newErrors.confirm = "กรูณากรอก Confrime Password" ; 
+    
+    if(form.password && form.confirm && form.password !== form.confirm)newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e) =>{
+    e.preventDefault(); 
+    const result = validate();
+
+    setErrors(result) ; 
+
+    if(Object.keys(result).length === 0 ){
+      alert("Register Successful ✅")
+    }
+  }; 
+
+
+  
+
   return (
     <div className="bodyp">
       <nav className="menu-wraper">
@@ -60,20 +87,20 @@ export default function Register() {
         <br />
         <div className="content1-a">
            <center>
-                <form action="">
-                    <label htmlFor="">Username : <input value={form.username}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" name="" id="" placeholder="Enter User-name" /></label>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="">Username : <input value={form.username} onChange={handleChange}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" name="" id="" placeholder="Enter User-name" /></label>
                     <br />
                     <br />
-                    <label htmlFor="">Firstname :    <input value={form.firstname}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
+                    <label htmlFor="">Firstname :    <input value={form.firstname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Lastname : <input value={form.lastname} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
+                    <label htmlFor="">Lastname : <input value={form.lastname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Password: <input value={form.password}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
+                    <label htmlFor="">Password: <input value={form.password} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Confrime Password : <input value={form.confirm}  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
+                    <label htmlFor="">Confrime Password : <input value={form.confirm} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
                     <br />
                     <br />
                     <button style={{width:"200px" , height: "50px"}}>Register</button>
