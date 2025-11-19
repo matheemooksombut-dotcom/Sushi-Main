@@ -1311,3 +1311,49 @@ a:hover{
 
 
 
+.itempage3 {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+
+  background-image: url("https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2019/02/hanami-dango_shironagasukujira_GettyImages-1459478504-770x513.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.itempage3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+
+  filter: blur(13px);
+  transform: scale(1.05); 
+  z-index: 0;
+}
+
+
+.itempage3 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.titleabout2{
+  width: 100%;
+  height: 40vh;
+  color: white;
+  margin-top: 100px;
+  padding-left: 820px;
+  padding-top: 300px;
+  font-size: 3rem;
+  h1{ font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  }
+ 
+  
+}

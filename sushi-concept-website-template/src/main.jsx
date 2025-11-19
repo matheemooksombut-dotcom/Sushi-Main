@@ -12,6 +12,7 @@ import Item7 from './item7.jsx';
 import Item8 from './item8.jsx';
 import Item9 from './item9.jsx';
 import About from './about.jsx';
+import Register from './Register.jsx'; 
 import './style/style.css'; 
 
 createRoot(document.getElementById("root")).render(
@@ -29,6 +30,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/item8" element={<Item8 />} />
       <Route path="/item9" element={<Item9 />} />
       <Route path="/about" element={<About />} />
+      <Route path="/Register" element={<Register />} />
 
     </Routes>
   </BrowserRouter>

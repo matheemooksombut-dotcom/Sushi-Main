@@ -18,7 +18,7 @@ export default function Item4() {
             <li><Link to="/order">Product</Link></li>
             <li className="menu-3"><Link to="/about">About</Link></li>
             <li><a href="">Cart</a></li>
-            <li><Link to=""><i class="fa-solid fa-user fa-lg"></i></Link></li>
+            <li><Link to="/Register"><i class="fa-solid fa-user fa-lg"></i></Link></li>
           </ul>
         </div>
 

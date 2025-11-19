@@ -35,7 +35,7 @@ function App() {
             <li className="menu-2"><Link to="/order">Product</Link></li>
             <li className="menu-3"><Link to="/about">About</Link></li>
             <li className="menu-4"><a href="">Cart</a></li>
-            <li><Link to=""><i class="fa-solid fa-user fa-lg"></i></Link></li>
+            <li><Link to="/Register"><i class="fa-solid fa-user fa-lg"></i></Link></li>
           </ul>
         </div>
 
