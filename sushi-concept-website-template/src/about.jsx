@@ -22,7 +22,7 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="hamberger-bar">
+        <div className="hamberger-bar"> 
           <i style={{ color: "aliceblue" }} className="fa-solid fa-bars fa-bounce"></i>
         </div>
       </nav>
