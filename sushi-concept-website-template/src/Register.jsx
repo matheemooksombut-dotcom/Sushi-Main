@@ -3,7 +3,19 @@ import { Link } from "react-router-dom";
 import "./style/style.css";
 
 export default function Register() {
-  const [qty, setQty] = useState(1);
+  const [form, setFrom] = useState({
+    username:"" , 
+    firstname: "",
+    lastname:"", 
+    password:"",
+    confirm:"" ,    
+  });
+
+  const [error , setErrors] = useState({});
+
+  const handleChange = (e) =>{
+    setFrom({...form,[e.target.name]: e.target.value});
+  };
 
   return (
     <div className="bodyp">
@@ -49,19 +61,19 @@ export default function Register() {
         <div className="content1-a">
            <center>
                 <form action="">
-                    <label htmlFor="">Username : <input  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" name="" id="" placeholder="Enter User-name" /></label>
+                    <label htmlFor="">Username : <input value={form.username}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" name="" id="" placeholder="Enter User-name" /></label>
                     <br />
                     <br />
-                    <label htmlFor="">Firstname :    <input  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
+                    <label htmlFor="">Firstname :    <input value={form.firstname}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Lastname : <input  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
+                    <label htmlFor="">Lastname : <input value={form.lastname} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Password: <input  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
+                    <label htmlFor="">Password: <input value={form.password}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
                     <br />
                     <br />
-                    <label htmlFor="">Confrime Password : <input  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
+                    <label htmlFor="">Confrime Password : <input value={form.confirm}  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
                     <br />
                     <br />
                     <button style={{width:"200px" , height: "50px"}}>Register</button>
