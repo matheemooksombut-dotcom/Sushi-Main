@@ -1278,12 +1278,12 @@ a:hover{
 .about-content{
   background-color: black;
   width: 100%;
-  height: 80vh;
+  height: auto;
 }
 
 .content1-a{
   width: 40%;
-  height: 60vh;
+  height: auto;
   background-color: #ffffff;
   margin-left: 700px;
   padding-top: 100px;

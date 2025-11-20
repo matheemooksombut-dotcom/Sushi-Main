@@ -19,12 +19,13 @@ export default function Register() {
 
   const validate =  () =>{
     let newErrors = {}; 
-    if(!form.username)newErrors.username = "กรุณากรอก Username "; 
-    if(!form.firstname)newErrors.firstname = "กรุณากรอก Firstname"; 
-    if(!form.password)newErrors.password =  "กรุณากรอก Password"; 
-    if(!form.confirm)newErrors.confirm = "กรูณากรอก Confrime Password" ; 
+    if(!form.username)newErrors.username = "กรุณากรอก Username ❌ "; 
+    if(!form.firstname)newErrors.firstname = "กรุณากรอก Firstname ❌"; 
+    if(!form.lastname)newErrors.lastname = "กรุณากรอก Lastname ❌"; 
+    if(!form.password)newErrors.password =  "กรุณากรอก Password ❌"; 
+    if(!form.confirm)newErrors.confirm = "กรูณากรอก Confrime Password ❌" ; 
     
-    if(form.password && form.confirm && form.password !== form.confirm){newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน";
+    if(form.password && form.confirm && form.password !== form.confirm){newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน ❌";
     }
 
     return newErrors;
@@ -121,6 +122,8 @@ export default function Register() {
                 <p> TELL : 0123456789</p>
                 <br />
                 <Link to="https://www.google.com/maps/@13.6761404,101.0824919,11z?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"><p style={{color: "black"}}> Location :  https://www.google.com/maps</p></Link>
+                <br />
+                <br />
             </center>
         </div>
         
