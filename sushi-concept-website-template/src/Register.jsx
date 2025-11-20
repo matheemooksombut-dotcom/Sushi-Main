@@ -90,23 +90,23 @@ export default function Register() {
            <center>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="">Username : <input  name="username" value={form.username} onChange={handleChange}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text"  id="" placeholder="Enter User-name" /></label>
-                    {errors.username &&  <p style={{ color: "red" }}>{errors.username}</p>}
+                    {errors.username &&  <p style={{ color: "red" , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120  } }>{errors.username}</p>}
                     <br />
                     <br />
                     <label htmlFor="">Firstname :    <input name="firstname" value={form.firstname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
-                    {errors.firstname &&  <p style={{ color: "red" }}>{errors.firstname}</p>}
+                    {errors.firstname &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.firstname}</p>}
                     <br />
                     <br />
                     <label htmlFor="">Lastname : <input name="lastname" value={form.lastname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
-                    {errors.lastname &&  <p style={{ color: "red" }}>{errors.lastname}</p>}
+                    {errors.lastname &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.lastname}</p>}
                     <br />
                     <br />
                     <label htmlFor="">Password: <input name="password" value={form.password} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
-                    {errors.password &&  <p style={{ color: "red" }}>{errors.password}</p>}
+                    {errors.password &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.password}</p>}
                     <br />
                     <br />
                     <label htmlFor="">Confrime Password : <input name="confirm" value={form.confirm} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
-                    {errors.confirm &&  <p style={{ color: "red" }}>{errors.confirm}</p>}
+                    {errors.confirm &&  <p style={{ color: "red"  , backgroundColor:"black" , width:300, marginTop:20, marginLeft: 240 }}>{errors.confirm}</p>}
                     <br />
                     <br />
                    
