@@ -110,9 +110,9 @@ export default function Register() {
                     <br />
                    
 
-            
+                <button style={{width:"200px" , height: "50px"}}>Register</button>
                 </form>
-                 <button style={{width:"200px" , height: "50px"}}>Register</button>
+                 
                 
                 <br />
                 <br />
