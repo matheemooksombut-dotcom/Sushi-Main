@@ -108,10 +108,11 @@ export default function Register() {
                     {errors.confirm &&  <p style={{ color: "red" }}>{errors.confirm}</p>}
                     <br />
                     <br />
-                    <button style={{width:"200px" , height: "50px"}}>Register</button>
+                   
 
             
                 </form>
+                 <button style={{width:"200px" , height: "50px"}}>Register</button>
                 
                 <br />
                 <br />
