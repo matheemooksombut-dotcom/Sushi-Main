@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style/style.css";
 
 export default function Register() {
-  const [form, setFrom] = useState({
+  const [form, setForm] = useState({
     username:"" , 
     firstname: "",
     lastname:"", 
@@ -11,10 +11,10 @@ export default function Register() {
     confirm:"" ,    
   });
 
-  const [error , setErrors] = useState({});
+  const [errors , setErrors] = useState({});
 
   const handleChange = (e) =>{
-    setFrom({...form,[e.target.name]: e.target.value});
+    setForm({...form,[e.target.name]: e.target.value});
   };
 
   const validate =  () =>{
@@ -88,7 +88,7 @@ export default function Register() {
         <div className="content1-a">
            <center>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="">Username : <input value={form.username} onChange={handleChange}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" name="" id="" placeholder="Enter User-name" /></label>
+                    <label htmlFor="">Username : <input value={form.username} onChange={handleChange}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text"  id="" placeholder="Enter User-name" /></label>
                     {errors.username &&  <p style={{ color: "red" }}>{errors.username}</p>}
                     <br />
                     <br />
