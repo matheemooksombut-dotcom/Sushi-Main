@@ -7,7 +7,7 @@ const cors = require('cors')
 
 
 dotenv.config()
-const MOGO_URI = process.env.MOGO_URI 
+const MONGO_URI = process.env.MONGO_URI 
 
 app.use(express.json())
 app.use(cors())
@@ -22,7 +22,7 @@ app.use(cors())
 
 
 //! Database Coonection 
-mongoose.connect(MOGO_URI).then(()=> console.log('Connection Success ! ⭐️')).catch(error =>
+mongoose.connect(MONGO_URI).then(()=> console.log('Connection Success ! ⭐️')).catch(error =>
     console.log(error.message)
 )
 
