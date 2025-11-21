@@ -1,18 +1,31 @@
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 5000 
-
-// app.get('/', (req , res) =>{
-//     res.send('API is running... ')
-
-// })
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
+const cors = require('cors')
 
 
+dotenv.config()
+const MOGO_URI = process.env.MOGO_URI 
 
-// app.get('/api/test', (req , res) =>{
-//     res.send('send data ! ')
+app.use(express.json())
+app.use(cors())
 
-// })
-// app.listen(PORT,()=>{
-//     console.log("Server is running... ")
-// })
+
+
+
+//! Route 
+
+
+
+
+
+//! Database Coonection 
+mongoose.connect(MOGO_URI).then(()=> console.log('Connection Success ! ⭐️')).catch(error =>
+    console.log(error.message)
+)
+
+
+
+
