@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const cors = require('cors')
+const postRoutes = require('./routes/posts')
 
 
 dotenv.config()
@@ -16,6 +17,7 @@ app.use(cors())
 
 
 //! Route 
+app.use('/posts' , postRoutes)
 
 
 

@@ -2,14 +2,14 @@ const express = require('express')
 
 
 const {
-    getPost , 
+    getPosts , 
     createPost
 } = require('../controllers/post')
 
 
 const router = express.Router()
 
-router.get('/' , getPost)
+router.get('/' , getPosts)
 router.post('/' , createPost)
 
 
