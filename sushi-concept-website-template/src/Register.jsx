@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./style/style.css";
 
 export default function Register() {
-  const [form, setForm] = useState({
-    username:"" , 
+  const [form, setForm ] = useState({
+     username:"" , 
     firstname: "",
     lastname:"", 
     password:"",
@@ -17,19 +17,28 @@ export default function Register() {
     setForm({...form,[e.target.name]: e.target.value});
   };
 
-  const validate =  () =>{
-    let newErrors = {}; 
-    if(!form.username)newErrors.username = "กรุณากรอก Username ❌ "; 
-    if(!form.firstname)newErrors.firstname = "กรุณากรอก Firstname ❌"; 
-    if(!form.lastname)newErrors.lastname = "กรุณากรอก Lastname ❌"; 
-    if(!form.password)newErrors.password =  "กรุณากรอก Password ❌"; 
-    if(!form.confirm)newErrors.confirm = "กรูณากรอก Confrime Password ❌" ; 
-    
-    if(form.password && form.confirm && form.password !== form.confirm){newErrors.confirm = "กรุณากรอกรหัสผ่านให้ตรงกัน ❌";
-    }
+  const validate = () => {
+  let newErrors = {};
+  let message = "กรุณากรอกข้อมูลให้ครบ ❕ ";
 
-    return newErrors;
-  };
+  const requiredFields = ["username", "firstname", "lastname", "password", "confirm"];
+
+  // ถ้ามีช่องไหนว่าง → ให้เด้ง error เดียวเลย
+  const isMissing = requiredFields.some(field => !form[field]);
+
+  if (isMissing) {
+    newErrors.global = message;
+    return newErrors; // ไม่ต้องเช็คอย่างอื่นแล้ว
+  }
+
+  // เช็ค password ตรงกัน
+  if (form.password !== form.confirm) {
+    newErrors.global = "กรุณากรอกรหัสผ่านให้ตรงกัน 🔒";
+  }
+
+  return newErrors;
+};
+
 
   const handleSubmit = (e) =>{
     e.preventDefault(); 
@@ -89,24 +98,41 @@ export default function Register() {
         <div className="content1-a">
            <center>
                 <form onSubmit={handleSubmit}>
+                     {errors.global && (
+                        <p
+                          style={{
+                            padding: 8,
+                            color: "red",
+                            WebkitBorderRadius: 20,
+                            backgroundColor: "black",
+                            width: 250,
+                            marginTop: 20,
+                            marginLeft: 120
+                          }}
+                        >
+                          {errors.global}
+                        </p>
+                      )}
+                    <br />
+                    <br />
                     <label htmlFor="">Username : <input  name="username" value={form.username} onChange={handleChange}   style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text"  id="" placeholder="Enter User-name" /></label>
-                    {errors.username &&  <p style={{ color: "red" , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120  } }>{errors.username}</p>}
+                    
                     <br />
                     <br />
                     <label htmlFor="">Firstname :    <input name="firstname" value={form.firstname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter First-name" /> </label>
-                    {errors.firstname &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.firstname}</p>}
+                    
                     <br />
                     <br />
                     <label htmlFor="">Lastname : <input name="lastname" value={form.lastname} onChange={handleChange} style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="text" placeholder="Enter Last-name" /> </label>
-                    {errors.lastname &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.lastname}</p>}
+                   
                     <br />
                     <br />
                     <label htmlFor="">Password: <input name="password" value={form.password} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "30px"}} type="password" placeholder="Enter Password" /> </label>
-                    {errors.password &&  <p style={{ color: "red"  , backgroundColor:"black" , width:200, marginTop:20, marginLeft: 120}}>{errors.password}</p>}
+                    
                     <br />
                     <br />
                     <label htmlFor="">Confrime Password : <input name="confirm" value={form.confirm} onChange={handleChange}  style={{width:"200px" , height: "50px" , marginLeft: "0px"}} type="password" placeholder="Cobfrime Password" /> </label>
-                    {errors.confirm &&  <p style={{ color: "red"  , backgroundColor:"black" , width:300, marginTop:20, marginLeft: 240 }}>{errors.confirm}</p>}
+                    
                     <br />
                     <br />
                    
