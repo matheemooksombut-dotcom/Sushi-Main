@@ -7,6 +7,7 @@ const cors = require('cors')
 const postRoutes = require('./routes/posts')
 
 
+
 dotenv.config()
 const MONGO_URI = process.env.MONGO_URI 
 
@@ -27,6 +28,9 @@ app.use('/posts' , postRoutes)
 mongoose.connect(MONGO_URI).then(()=> console.log('Connection Success ! ⭐️')).catch(error =>
     console.log(error.message)
 )
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 
 

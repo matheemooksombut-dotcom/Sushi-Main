@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style/style.css";
 import axios from "axios";
+// app.use('/posts', require('./routes/posts'))
+
 
 export default function Register({currentForm , set ,  setCurrentForm}) {
-  const [formData ,  setFormData] = useStatestate({
+  const [formData ,  setFormData] = useState({
       username: currentForm ? currentForm.username : '' , 
       firstname : currentForm ? currentForm.firstname : '', 
       lastname : currentForm ? currentForm.lastname : '', 
@@ -51,13 +53,13 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
     try {
       if (currentForm) {
         // Update
-        await axios.patch(`/posts/${currentForm._id}`, formData);
+        await axios.patch(`http://localhost:5000/posts/${currentForm._id}`, formData);
       } else {
         // Create new user
-        await axios.post("/posts", formData);
+        await axios.post("http://localhost:5000/posts", formData);
       }
 
-      const { data } = await axios.get("/posts");
+      const { data } = await axios.get("http://localhost:5000/posts");
       set(data);
 
       alert("Register Successful ✅");
@@ -96,7 +98,7 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
             <li><Link to="/order">Product</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><a href=""></a>Cart</li>
-             <li><Link to=""><i class="fa-solid fa-user fa-lg"></i></Link></li>
+             <li><Link to=""><i className="fa-solid fa-user fa-lg"></i></Link></li>
           </ul>
         </div>
 
@@ -166,7 +168,7 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
                     <br />
                    
 
-                <button style={{width:"200px" , height: "50px"}}>Register</button>
+                    <button type="submit" style={{width:"200px" , height: "50px"}}>Register</button>
                 </form>
                  
                 
@@ -187,4 +189,5 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
       </div>
     </div>
   );
+  
 }
