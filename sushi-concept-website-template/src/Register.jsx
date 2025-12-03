@@ -42,43 +42,32 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const result = validate();
-    setErrors(result);
+  const result = validate();
+  setErrors(result);
+  if (Object.keys(result).length !== 0) return;
 
-    // ❌ ถ้ามี error → หยุด
-    if (Object.keys(result).length !== 0) return;
+  try {
+    await axios.post("http://localhost:5000/posts", formData);
+    const { data } = await axios.get("http://localhost:5000/posts");
+    set(data);
 
-    try {
-      if (currentForm) {
-        // Update
-        await axios.patch(`http://localhost:5000/posts/${currentForm._id}`, formData);
-      } else {
-        // Create new user
-        await axios.post("http://localhost:5000/posts", formData);
-      }
+    alert("Register Successful ✅");
+    setFormData({
+      username: "",
+      firstname: "",
+      lastname: "",
+      password: "",
+      confirm: "",
+    });
+    setCurrentForm(null);
+  } catch (error) {
+    console.error(error);
+    alert("Error connecting to server ❌");
+  }
+};
 
-      const { data } = await axios.get("http://localhost:5000/posts");
-      set(data);
-
-      alert("Register Successful ✅");
-
-      setFormData({
-        username: "",
-        firstname: "",
-        lastname: "",
-        password: "",
-        confirm: "",
-      });
-
-      setCurrentForm(null);
-
-    } catch (error) {
-      console.log(error);
-      alert("เกิดข้อผิดพลาดในการเชื่อมต่อ Server ❌");
-    }
-  };
 
 
 

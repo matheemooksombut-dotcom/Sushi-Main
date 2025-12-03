@@ -1,33 +1,23 @@
-const Post = require('../model/User')
+// ./controllers/post.js
+const Post = require('../model/User');
 
+const getPosts = async (req, res) => {
+  try {
+    const posts = await Post.find();
+    res.status(200).json(posts);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
 
+const createPost = async (req, res) => {
+  try {
+    const newPost = new Post(req.body);
+    await newPost.save();
+    res.status(201).json(newPost);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
 
-// ! โชว์ข้อมูลทั้งหมดไปให้  Font-end
-const getPosts = async (req , res) =>{
-    try{
-        const posts =  await Post.find()
-
-        res.status(200).json({posts})
-
-    }catch(error){
-       res.status(404).json({message: error.message})
-    }
-}
-
-
-
-
-const  createPost = async (req , res) =>{
-    const post = req.body
-    const newPost = new Post(post)
-    try{
-        await newPost.save()
-        res.status(201).json(newPost)
-
-    }catch(error){
-        res.status(409).json({message: error.message})
-    }
-}
-
-
-module.exports = {getPosts , createPost}
+module.exports = { getPosts, createPost };
