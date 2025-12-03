@@ -42,32 +42,26 @@ export default function Register({currentForm , set ,  setCurrentForm}) {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const result = validate();
-  setErrors(result);
-  if (Object.keys(result).length !== 0) return;
+    const result = validate();
+    setErrors(result);
 
-  try {
-    await axios.post("http://localhost:5000/posts", formData);
-    const { data } = await axios.get("http://localhost:5000/posts");
-    set(data);
+    // ❌ ถ้ามี error → หยุด
+    if (Object.keys(result).length !== 0) return;
 
-    alert("Register Successful ✅");
-    setFormData({
-      username: "",
-      firstname: "",
-      lastname: "",
-      password: "",
-      confirm: "",
-    });
-    setCurrentForm(null);
-  } catch (error) {
-    console.error(error);
-    alert("Error connecting to server ❌");
-  }
-};
-
+     try {
+      const resp = await axios.post("http://localhost:5000/posts", formData);
+      console.log("server response:", resp.data);
+      alert("Register Successful ✅");
+      setFormData({ username:"", firstname:"", lastname:"", password:"", confirm:"" });
+      setError("");
+      if (onRegistered) onRegistered();
+    } catch (err) {
+      console.error(err);
+      setError("เกิดข้อผิดพลาดจาก Server ❌");
+    }
+  };
 
 
 

@@ -1,7 +1,7 @@
 // ./model/User.js
 const mongoose = require('mongoose');
 
-const postSchema = mongoose.Schema({
+const usersSchema = mongoose.Schema({
   username: { type: String, required: true },
   firstname: { type: String, required: true },
   lastname: { type: String, required: true },
@@ -9,4 +9,4 @@ const postSchema = mongoose.Schema({
   confirm: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Post', postSchema);
+module.exports = mongoose.model('users', usersSchema);
